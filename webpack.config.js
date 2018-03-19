@@ -7,6 +7,10 @@ module.exports = {
 
     entry: './src/index.js',
 
+    devtool: 'source-map',
+
+    mode: 'development',
+
     output: {
         path: path.resolve(__dirname, 'build'),
         publicPath: '/build/',

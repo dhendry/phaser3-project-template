@@ -2,7 +2,7 @@ import 'phaser';
 
 var config = {
     type: Phaser.AUTO,
-    parent: 'phaser-example',
+    //parent: 'phaser-example',
     width: 800,
     height: 600,
     scene: {
