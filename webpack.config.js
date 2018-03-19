@@ -9,7 +9,7 @@ module.exports = {
 
     devtool: 'source-map',
 
-    mode: 'development',
+    //mode: 'development',
 
     output: {
         path: path.resolve(__dirname, 'build'),

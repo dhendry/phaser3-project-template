@@ -1,18 +1,16 @@
 import 'phaser';
+import BouncingLogoExample from "./BouncingLogoExample";
 
 var config = {
     type: Phaser.AUTO,
-    //parent: 'phaser-example',
     width: 800,
     height: 600,
-    scene: {
-        preload: preload,
-        create: create
-    }
+    scene: [BouncingLogoExample]
 };
 
 var game = new Phaser.Game(config);
 
+/*
 function preload ()
 {
     this.load.image('logo', 'assets/logo.png');
@@ -32,3 +30,4 @@ function create ()
     });
 
 }
+*/
