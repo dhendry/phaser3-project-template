@@ -5,7 +5,10 @@ const path = require('path');
 
 module.exports = {
 
-    entry: './src/index.js',
+    entry: {
+        'project': './src/index.js',
+        'depsonly': './src/depsonly.js'
+    },
 
     devtool: 'source-map',
 
@@ -14,7 +17,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         publicPath: '/build/',
-        filename: 'project.bundle.js'
+        filename: '[name].bundle.js'
     },
 
     module: {
@@ -22,7 +25,15 @@ module.exports = {
           {
             test: [ /\.vert$/, /\.frag$/ ],
             use: 'raw-loader'
-          }
+          }/*,
+            {
+                use: {
+                    loader:'babel-loader',
+                    options: { presets: ['es2015'] }
+                },
+                test: /\.js$/,
+                exclude: /node_modules/
+            }*/
         ]
     },
 
