@@ -1,7 +1,6 @@
 export default class BouncingLogoExample extends Phaser.Scene {
-
     constructor() {
-        super({key: "BouncingLogoExample"});
+        super({key: 'BouncingLogoExample'});
     }
 
     preload() {

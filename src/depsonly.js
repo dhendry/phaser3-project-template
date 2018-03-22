@@ -1,1 +1,2 @@
 import 'phaser';
+import "jquery";
